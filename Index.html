@@ -5,20 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jakub Blasko | Portfolio</title>
   <link rel="canonical" href="About/About.html">
+  <meta http-equiv="refresh" content="0; url=About/About.html">
+  <script>
+    window.location.replace('About/About.html');
+  </script>
 </head>
 <body>
-  <p>Pokud nedojde k automatickemu presmerovani, <a id="fallback-link" href="About/About.html">prejdete na hlavni stranku portfolia</a>.</p>
-
-  <script>
-    (function() {
-      var inPersonalWeb = /Personal%20web|Personal web/.test(window.location.pathname);
-      var target = inPersonalWeb ? 'About/About.html' : 'Personal%20web/About/About.html';
-      var link = document.getElementById('fallback-link');
-      if (link) {
-        link.href = target;
-      }
-      window.location.replace(target);
-    })();
-  </script>
+  <p>Pokud nedojde k automatickemu presmerovani, <a href="About/About.html">prejdete na hlavni stranku portfolia</a>.</p>
 </body>
 </html>
